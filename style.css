@@ -1,0 +1,348 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  height: 100vh;
+  /* overflow: hidden; */
+}
+/*  */
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+    .center h1{
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid silver;
+    }
+    /* .center p{
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid silver;
+    } */
+    .center form{
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+/*  */
+
+  form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+    .txt_field input{
+      width: 100%;
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .txt_field label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #adadad;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+      transition: .5s;
+    }
+    .txt_field span::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #2691d9;
+      transition: .5s;
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+      top: -5px;
+      color: #2691d9;
+    }
+    .txt_field input:focus ~ span::before,
+    .txt_field input:valid ~ span::before{
+      width: 100%;
+    }
+/*  */
+
+  .pass{
+    margin: -5px 0 20px 5px;
+    color: #a9a9a9;
+    cursor: pointer;
+
+    font-weight: 500;
+    /* margin: -15px 0 15px; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .pass label input {
+    accent-color: #2691d9;
+  }
+    .pass a {
+      color: #a9a9a9;
+      text-decoration: none;
+    }
+    .pass a:hover{
+      text-decoration: underline;
+    }
+/*  */
+
+  .sub{
+    /* FLEX */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+    text-decoration: none;
+  }
+    .sub:hover{
+      border-color: #2691d9;
+      transition: .5s;
+    }
+    a {
+      text-decoration: none;
+    }
+    
+    /*  */
+    /* input[type="submit"]{
+      width: 100%;
+      height: 50px;
+      border: 1px solid;
+      background: #2691d9;
+      border-radius: 25px;
+      font-size: 18px;
+      color: #e9f4fb;
+      font-weight: 700;
+      cursor: pointer;
+      outline: none;
+    }
+      input[type="submit"]:hover{
+        border-color: #2691d9;
+        transition: .5s;
+      } */
+/*  */
+
+  .signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+    .signup_link a{
+      color: #2691d9;
+      text-decoration: none;
+    }
+    .signup_link a:hover{
+      text-decoration: underline;
+    }
+/*  */
+  /* .error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+  } */
+
+
+/* Andhika Edit */
+
+.body__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  padding: 24px 12px;
+}
+
+.container__home__title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.container__home__sub {
+  text-align: center;
+  font-size: 20px;
+}
+
+.container__home__action {
+  display: flex;
+
+  gap: 24px;
+}
+
+.container__home__action__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    height: 50px; 
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+    text-decoration: none;  
+}
+
+/* Button */
+.star {
+  background-color: #ffdd92;
+  border: none;
+  color: white;
+  padding: 7px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.stir {
+  background-color: #ff9292;
+  border: none;
+  color: white;
+  padding: 7px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.stor {
+  background-color: #92a8ff;
+  border: none;
+  color: white;
+  padding: 7px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Paragraf */
+.con {
+  text-align: left;
+  font-size: 20px;
+  top: -5px;
+  color: #113f5d;
+}
+
+/* Table */
+.container__table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+
+  width: 1500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  padding: 24px 12px;
+}
+table {
+  border-collapse: collapse;
+  /* border: 1px solid;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  border-collapse: collapse; */
+}
+
+thead {
+  background: #226ea1;
+  color: white;
+}
+
+td {
+  padding: 12px 18px;
+}
+
+.number {
+  min-width: 150px;
+}
+
+.email {
+  min-width: 200px;
+}
+.picture{
+  top: -5px;
+  color: #adadad;
+}
+.grade{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+  top: -5px;
+  color: #226ea1;
+}
+
+  /* table, th, td {
+    border: 1px solid;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  } */
+
+/* Buttons */
+/* 
+.edit{
+  display: inline-flex;
+  text-align: right;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px 12px;
+}
+.edit {
+  background-color: #37afb7;
+}
+.edit:hover {
+  background-color: #319ca3;
+} */
